@@ -1,0 +1,46 @@
+#user-icon {
+
+  font-size: 100px;
+  color:#505cfd;
+}
+
+/* recursos de texto */
+
+.text-box {
+
+  color: #ffffff;
+  font-size: 20px;
+
+}
+
+.text-box-dark {
+
+  color: grey;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.title-box {
+
+  color: #ffffff;
+  font-size: 28px;
+
+}
+
+#index-icon {
+
+  color: #ffffff;
+  font-size: 100px;
+  margin-left: 100px;
+
+}
+
+/* removendo o filtro de pesquisas do plugin DataTables */ 
+
+.dataTables_filter {
+
+  display: none;
+
+  }
+  

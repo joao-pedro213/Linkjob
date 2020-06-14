@@ -1,0 +1,13 @@
+CREATE TABLE TipoServico (
+	idTipo INT AUTO_INCREMENT,
+	nomeTipo VARCHAR(100) NOT NULL,
+	descricao VARCHAR(280) NOT NULL,
+	dataCriacao DATETIME NOT NULL,
+	PRIMARY KEY (idTipo)
+ ) CHARACTER SET utf8 COLLATE utf8mb4_general_ci;
+
+
+INSERT INTO `tiposervico`( `nomeTipo`, `descricao`, `dataCriacao`) VALUES ("Serviço Doméstico","...",now());
+INSERT INTO `tiposervico`( `nomeTipo`, `descricao`, `dataCriacao`) VALUES ("Informática","...",now());
+INSERT INTO `tiposervico`( `nomeTipo`, `descricao`, `dataCriacao`) VALUES ("Artesanato","...",now());
+INSERT INTO `tiposervico`( `nomeTipo`, `descricao`, `dataCriacao`) VALUES ("Gastronomia","...",now());

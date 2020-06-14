@@ -1,0 +1,9 @@
+CREATE TABLE  login (
+  idUsuario int AUTO_INCREMENT not null,
+  email varchar(150) unique NOT NULL,
+  senha varchar(80) NOT NULL,
+  nome varchar(150) NOT NULL,
+  sexo char(1) NOT NULL,
+  data_criacao datetime ,
+  PRIMARY KEY (idUsuario)
+) CHARACTER SET utf8 COLLATE utf8mb4_general_ci;

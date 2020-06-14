@@ -1,0 +1,20 @@
+CREATE TABLE servicos (
+  idServico int(11) NOT NULL AUTO_INCREMENT, 
+  idPrestador int not null,
+  tiposervicoId int(1) not null,
+  nomePrestador varchar(150) not null,
+  nomeServico varchar(80) NOT NULL, 
+  valorServico double(9,2), 
+  estado char(2) NOT NULL, 
+  cidade varchar(80) NOT NULL, 
+  endereco varchar(150), 
+  descricao varchar(280) NOT NULL,
+  emailContato varchar(100) NOT NULL, 
+  telefoneFixo varchar(14),
+  celular varchar(15), 
+  ativo bit(1), 
+  dataCricacao datetime NOT NULL,
+  PRIMARY KEY (idServico),
+  FOREIGN KEY (tiposervicoId) REFERENCES tiposervico(idTipo),
+  FOREIGN KEY (idPrestador) REFERENCES login(idUsuario)
+) ENGINE=InnoDB CHARACTER SET utf8 COLLATE utf8mb4_general_ci;
