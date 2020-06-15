@@ -97,7 +97,7 @@
 					<img class="card-img-top" height="314" src="img/card-image-1.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Precisando de um serviço?</h5>
-						<p class="card-text" align="justify">Os serviços que são divulgados em nossa plataforma são separados por categorias específicas, faciliando a busca pelo <em>job</em> ideal.</p>
+						<p class="card-text" align="justify">Os serviços que são divulgados em nossa plataforma são separados por categorias específicas, faciliando a busca pelo prestador ideal.</p>
 					</div>
 				</div>
 				<div class="card">
@@ -171,7 +171,7 @@
 					<h5 class="text-info">Filtrando serviços divulgados</h5>
 
 					<p style="color: #585772" align="justify">Os serviços divulgados na plataforma são dividos por categorias.
-						Você pode utilizar nossos filtros categoria, serviço prestado, estado e cidade para encontrar o <em>job<em> ideal.</p>
+						Você pode utilizar nossos filtros de categoria, serviço prestado, estado e cidade para encontrar o prestador ideal.</p>
 
 					<figure>
 						<img class="img-responsive rounded border" width="540" height="200" src="img/busca-servico-3.png" title="Filtros de busca para serviços">
