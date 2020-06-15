@@ -1,4 +1,4 @@
-# Documentação do sistema Web LinkJob
+# Documentação do Sistema Web LinkJob
 
 Functions utilizadas em JavaScript:
 
