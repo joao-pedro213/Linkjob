@@ -272,6 +272,14 @@ header("content-type: text/html;charset=utf-8");
                     $email = $row["emailContato"];
                     $wap = $row["celular"];
                     $fixo = $row["telefoneFixo"];
+
+                    if ($fixo == "") {
+                        $fixo = "Telefone para contato não informado.";
+                    };
+                    
+                    if ($wap == "") {
+                        $wap = "Celular para contato não informado.";
+                    };
                 }
                 echo
                     "
@@ -288,7 +296,7 @@ header("content-type: text/html;charset=utf-8");
 
                           <div class='row'>
                             
-                            <div class='col-md-2'> 
+                            <div class='col-md-2' style='display: flex;'> 
                                 <i class='fa fa-user-tie' id='user-icon'
                                 style='  padding: 5px;
                                 border: 1.5px solid #dee2e6;              
