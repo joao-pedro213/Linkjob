@@ -300,4 +300,30 @@ footer{
 	box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
 }
 
+.zoom{
+	overflow: hidden; 
+}
+
+.zoom img{
+	 max-width: 100%;
+	 -webkit-transition: all 0.3s;
+	 -moz-transition: all 0.3s;
+	 transition: all.0.3;
+}
+
+.zoom:hover img{
+	 -moz-transform: scale(1.1);
+	 -webkit-transform: scale(1.1);
+	 transform: scale(1.5);
+	 transform-origin: top right;
+	 margin-top: 1px
+}
+
+.zoom:hover .img-2{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.5);
+	transform-origin: top center;
+	margin-top: 1px
+}
 

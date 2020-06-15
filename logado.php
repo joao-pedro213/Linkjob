@@ -293,7 +293,6 @@
 
 			<img class="big-circle" src="./img/big-eclipse.svg" alt="" />
 			<img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
-			<img class="small-circle" src="./img/small-eclipse.svg" alt="" />
 		</main>
 	</section>
 	<section id="two" data-index="1" class="template-one">
@@ -306,7 +305,7 @@
 					<img class="card-img-top" height="314" src="img/card-image-1.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Precisando de um serviço?</h5>
-						<p class="card-text" align="justify">Os serviços que são divulgados em nossa plataforma são separados por categorias específicas, faciliando a busca pelo <em>job</em> ideal.</p>
+						<p class="card-text" align="justify">Os serviços que são divulgados em nossa plataforma são separados por categorias específicas, faciliando a busca pelo <em>job</em> ideal de acordo com as suas necessidades.</p>
 					</div>
 				</div>
 				<div class="card">
@@ -327,10 +326,70 @@
 
 		</div>
 	</section>
+	
 	<section id="three" data-index="2" class="template-two">
-		<h1>Como usar</h1>
+		<div class="container"><br><br>
 
-	</section>
+			<h1 style="color: #585772">Como usar</h1><br><br>
+
+			<div class="row">
+				<div class="col-md-6 border-right">
+
+					<h3 style="color: #585772">Cadastrando um serviço</h3>
+
+					<p style="color: #585772" align="justify">Para cadastrar um serviço é muito simples. Ao efetuar login no site, basta clicar no botão que se encontra no menu principal chamado "Cadastrar Serviço", conforme a imagem abaixo.
+						Ao clicar, uma nova tela é aberta e para fazer o cadastro do serviço basta preencher todos os campos solicitados.
+					</p>
+
+					<p class="text-success" align="justify">Lembre-se de disponibilizar todas as informações necessárias para divulgação do serviço prestado,
+						assim, vai se tornar mais fácil clientes em potencial te encontrarem em nossa plataforma</p>
+
+					<figure>
+						<div class="zoom">
+							<img class="img-responsive rounded border" width="479" height="250" src="img/Cadastro-servico-2.png" title="Botão para cadastrar um novo serviço">
+						</div>
+					</figure>
+
+				</div>
+				<div class="col-md-6">
+					<h5 class="text-info">Demonstrando como cadastrar um novo serviço</h5><br>
+					<video class="rounded border" width="540" height="432" title="Vídeo demonstrativo para cadastro de um novo serviço" controls>
+						<source src="img/cadastro-servico-v.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div><br><br>
+
+			<div class="row">
+				<div class="col-md-6 border-right">
+
+					<h3 style="color: #585772">Buscando serviços na plataforma</h3>
+
+					<p style="color: #585772" align="justify"> Para buscar por serviços divulgados na plataforma basta clicar em "Buscar Serviço", que se encontra no menu principal, conforme a imagem abaixo.
+					</p>
+
+					<figure>
+						<div class="zoom">
+							<img class="img-responsive rounded border img-2" width="479" height="250" src="img/busca-servico-2.png" title="Link para página de busca de serviços">
+						</div>
+					</figure>
+
+				</div>
+				<div class="col-md-6">
+
+					<h5 class="text-info">Filtrando serviços divulgados</h5>
+
+					<p style="color: #585772" align="justify">Os serviços divulgados na plataforma são dividos por categorias.
+						Você pode utilizar nossos filtros categoria, serviço prestado, estado e cidade para encontrar o <em>job<em> ideal.</p>
+
+					<figure>
+						<img class="img-responsive rounded border" width="540" height="200" src="img/busca-servico-3.png" title="Filtros de busca para serviços">
+					</figure>
+
+				</div>
+			</div>
+		</div>
+
+	</section><br><br>
 
 	<footer class="page-footer font-small unique-color-dark pt-4">
 

@@ -44,7 +44,7 @@
 			<div class="navbar-collapse collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="new-item">
-						<a class="nav-link" href="index.php">Página inicial</a>
+						<a class="nav-link active" href="index.php">Página inicial</a>
 					</li>
 
 					<li class="new-item">
@@ -56,7 +56,7 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link active" href="buscarServico.php">Buscar Serviço</a>
+						<a class="nav-link" href="buscarServico.php">Buscar Serviço</a>
 					</li>
 				</ul>
 
@@ -118,10 +118,70 @@
 
 		</div>
 	</section>
+	
 	<section id="three" data-index="2" class="template-two">
-		<h1>Como usar</h1>
+		<div class="container"><br><br>
 
-	</section>
+			<h1 style="color: #585772">Como usar</h1><br><br>
+
+			<div class="row">
+				<div class="col-md-6 border-right">
+
+					<h3 style="color: #585772">Cadastrando um serviço</h3>
+
+					<p style="color: #585772" align="justify">Para cadastrar um serviço é muito simples. Ao efetuar login no site, basta clicar no botão que se encontra no menu principal chamado "Cadastrar Serviço", conforme a imagem abaixo.
+						Ao clicar, uma nova tela é aberta e para fazer o cadastro do serviço basta preencher todos os campos solicitados.
+					</p>
+
+					<p class="text-success" align="justify">Lembre-se de disponibilizar todas as informações necessárias para divulgação do serviço prestado,
+						assim, vai se tornar mais fácil clientes em potencial te encontrarem em nossa plataforma</p>
+
+					<figure>
+						<div class="zoom">
+							<img class="img-responsive rounded border" width="479" height="250" src="img/Cadastro-servico-2.png" title="Botão para cadastrar um novo serviço">
+						</div>
+					</figure>
+
+				</div>
+				<div class="col-md-6">
+					<h5 class="text-info">Demonstrando como cadastrar um novo serviço</h5><br>
+					<video class="rounded border" width="540" height="432" title="Vídeo demonstrativo para cadastro de um novo serviço" controls>
+						<source src="img/cadastro-servico-v.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div><br><br>
+
+			<div class="row">
+				<div class="col-md-6 border-right">
+
+					<h3 style="color: #585772">Buscando serviços na plataforma</h3>
+
+					<p style="color: #585772" align="justify"> Para buscar por serviços divulgados na plataforma basta clicar em "Buscar Serviço", que se encontra no menu principal, conforme a imagem abaixo.
+					</p>
+
+					<figure>
+						<div class="zoom">
+							<img class="img-responsive rounded border img-2" width="479" height="250" src="img/busca-servico-2.png" title="Link para página de busca de serviços">
+						</div>
+					</figure>
+
+				</div>
+				<div class="col-md-6">
+
+					<h5 class="text-info">Filtrando serviços divulgados</h5>
+
+					<p style="color: #585772" align="justify">Os serviços divulgados na plataforma são dividos por categorias.
+						Você pode utilizar nossos filtros categoria, serviço prestado, estado e cidade para encontrar o <em>job<em> ideal.</p>
+
+					<figure>
+						<img class="img-responsive rounded border" width="540" height="200" src="img/busca-servico-3.png" title="Filtros de busca para serviços">
+					</figure>
+
+				</div>
+			</div>
+		</div>
+
+	</section><br><br>
 
 	<footer class="page-footer font-small unique-color-dark pt-4">
 
@@ -136,7 +196,7 @@
 
 				<li class="list-inline-item">
 					<h5 class="mb-1" style="color: #ffffff">Cadastre-se gratuitamente clicando
-						<a  id="reg" href="logar.php" style="color: #ffffff; text-decoration: underline;">aqui!</a></h5>
+						<a id="reg" href="logar.php" style="color: #ffffff; text-decoration: underline;">aqui!</a></h5>
 				</li>
 
 			</ul>

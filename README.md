@@ -17,7 +17,7 @@ function inputValidate() {
 
 ###### closeModal()
 
-É uma função responsável por reiniciar as mensagens de sucesso e erro ao fechar um modal de cadastro de usuário ou serviço.
+É uma função responsável por reiniciar as mensagens de sucesso e erro ao fechar o modal de cadastro de usuário ou serviço.
 
 ``` 
 function closeModal() {
