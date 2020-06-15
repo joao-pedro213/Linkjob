@@ -1,6 +1,6 @@
-# Documentação do sistema web LinkJob
+# Documentação do sistema Web LinkJob
 
-Functions utilizadas no JavaScript:
+Functions utilizadas em JavaScript:
 
 ###### inputValidate()
 
