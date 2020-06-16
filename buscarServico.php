@@ -408,7 +408,7 @@ header("content-type: text/html;charset=utf-8");
                     </li><br>
 
                     <li class="list-inline-item">
-                        <h5 class="mb-1" style="color: #ffffff">Com &#129505;, equipe do LinkJob</h5>
+                        <h5 class="mb-1" style="color: #ffffff">Com &#128153;, equipe do LinkJob</h5>
                     </li>
 
                 </ul>
