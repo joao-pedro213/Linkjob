@@ -215,8 +215,7 @@ session_start();
                         <input class="form-control" type="password" placeholder="Sua senha" name="senha" id="senha">
                     </div>
                 </div>
-
-                <a class="password" href=" #">Esqueceu sua senha? </a>
+                
                 <button class="btn btn-second" id="login" type="submit">Entrar</button>
             </form>
         </div>
