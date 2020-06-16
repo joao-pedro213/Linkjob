@@ -68,7 +68,11 @@ section h2{
 }
 
 footer{
-	background: linear-gradient(to left, #00dbde, #505cfd)
+	background: linear-gradient(to left, #00dbde, #505cfd);
+}
+
+.container{
+	padding-bottom: 128px;
 }
 
 .bubble{
