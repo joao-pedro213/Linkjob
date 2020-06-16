@@ -48,22 +48,22 @@ header("content-type: text/html;charset=utf-8");
 
     <header>
 
-        <nav class="navbar navbar-expand-sm navbar-dark">
+        <?php
+        if (!isset($_SESSION["usuario"])) {
+        ?>
 
-            <a class="navbar-brand" href="index.php">LinkJob</a>
+            <!-- o usuário não está logado -->
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <nav class="navbar navbar-expand-sm navbar-dark">
 
-            <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <a class="navbar-brand" href="index.php">LinkJob</a>
 
-                    <?php
-                    if (!isset($_SESSION["usuario"])) {
-                    ?>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        <!-- o usuário não está logado -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
 
                         <li class="new-item">
                             <a class="nav-link" href="index.php">Página inicial</a>
@@ -81,89 +81,100 @@ header("content-type: text/html;charset=utf-8");
                             <a class="nav-link active" href="buscarServico.php">Buscar Serviço</a>
                         </li>
 
-                </ul>
+                    </ul>
 
-                <a class="btn btn-outline-light my-2 my-sm-0" href="logar.php" id="login">Entrar</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0" href="logar.php" id="login">Entrar</a>
 
-            <?php
-                    } else {
-                        $nome = $_SESSION['usuario']->nome;
-                        $email = $_SESSION['usuario']->email;
-                        $sexo = $_SESSION['usuario']->sexo;
-                        $wcm = "Bem vindo(a)";
-                        $pos = strpos($nome, " ");
+                <?php
+            } else {
+                $nome = $_SESSION['usuario']->nome;
+                $email = $_SESSION['usuario']->email;
+                $sexo = $_SESSION['usuario']->sexo;
+                $wcm = "Bem vindo(a)";
+                $pos = strpos($nome, " ");
 
-                        if ($pos > 0) {
-                            $nomeReduzido = substr($nome, 0, $pos);
-                        } else {
-                            $nomeReduzido = $nome;
-                        }
+                if ($pos > 0) {
+                    $nomeReduzido = substr($nome, 0, $pos);
+                } else {
+                    $nomeReduzido = $nome;
+                }
 
-                        switch ($sexo) {
-                            case "M":
-                                $wcm = "Bem vindo";
-                                break;
+                switch ($sexo) {
+                    case "M":
+                        $wcm = "Bem vindo";
+                        break;
 
-                            case "F":
-                                $wcm = "Bem vinda";
-                                break;
+                    case "F":
+                        $wcm = "Bem vinda";
+                        break;
 
-                            default:
-                                $wcm;
-                        }
-            ?>
+                    default:
+                        $wcm;
+                }
+                ?>
 
-                <!-- o usuário está logado -->
+                    <!-- o usuário está logado -->
+                    
+                    <nav class="navbar navbar-expand-sm navbar-dark">
 
-                <li class="new-item">
-                    <a class="nav-link" href="logado.php">Página inicial</a>
-                </li>
+                        <a class="navbar-brand" href="logado.php">LinkJob</a>
 
-                <li class="new-item">
-                    <a class="nav-link" href="logado.php#two" data-page="template-one">Sobre o LinkJob</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="logado.php#three" data-page="template-two">Como usar</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="buscarServico.php">Buscar Serviço</a>
-                </li>
-
-                </ul>
-
-                <ul class="navbar-nav ml-auto my-2 my-sm-0">
-
-                    <li class="nav-item dropdown">
-
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <?php echo "$wcm, $nomeReduzido"; ?>
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Minha conta</a>
-                            <a class="dropdown-item" href="servicos.html">Meus serviços</a>
-                        </div>
-
-                    </li>
-
-                    <li class="nav-item">
-
-                        <button type="button" class="btn btn-outline-light btn-circle" onclick='if (window.confirm("Você deseja realmente sair?")) { window.location.href = "index.php?sair=true";  };' title="Sair" style="border-radius: 35px;">
-                            <i class="fas fa-power-off"></i>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
 
-                    </li>
+                        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
 
-                </ul>
+                                <li class="new-item">
+                                    <a class="nav-link" href="logado.php">Página inicial</a>
+                                </li>
 
-            <?php
+                                <li class="new-item">
+                                    <a class="nav-link" href="logado.php#two" data-page="template-one">Sobre o LinkJob</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="logado.php#three" data-page="template-two">Como usar</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="buscarServico.php">Buscar Serviço</a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="navbar-nav ml-auto my-2 my-sm-0">
+
+                                <li class="nav-item dropdown">
+
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <?php echo "$wcm, $nomeReduzido"; ?>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Minha conta</a>
+                                        <a class="dropdown-item" href="servicos.html">Meus serviços</a>
+                                    </div>
+
+                                </li>
+
+                                <li class="nav-item">
+
+                                    <button type="button" class="btn btn-outline-light btn-circle" onclick='if (window.confirm("Você deseja realmente sair?")) { window.location.href = "index.php?sair=true";  };' title="Sair" style="border-radius: 35px;">
+                                        <i class="fas fa-power-off"></i>
+                                    </button>
+
+                                </li>
+
+                            </ul>
+
+                        <?php
                     }
-            ?>
+                        ?>
 
-            </div>
-        </nav>
+                        </div>
+                    </nav>
     </header>
 
 
@@ -276,7 +287,7 @@ header("content-type: text/html;charset=utf-8");
                     if ($fixo == "") {
                         $fixo = "Telefone para contato não informado.";
                     };
-                    
+
                     if ($wap == "") {
                         $wap = "Celular para contato não informado.";
                     };
