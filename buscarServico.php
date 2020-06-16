@@ -114,7 +114,7 @@ header("content-type: text/html;charset=utf-8");
                 ?>
 
                     <!-- o usuário está logado -->
-                    
+
                     <nav class="navbar navbar-expand-sm navbar-dark">
 
                         <a class="navbar-brand" href="logado.php">LinkJob</a>
@@ -153,8 +153,7 @@ header("content-type: text/html;charset=utf-8");
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Minha conta</a>
-                                        <a class="dropdown-item" href="servicos.html">Meus serviços</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-rocket mr-2"></i>Meus serviços</a>
                                     </div>
 
                                 </li>
