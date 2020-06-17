@@ -320,7 +320,7 @@ header("content-type: text/html;charset=utf-8");
                                 
                                 <label><b>Nome:</b> </label> " . $row["nomePrestador"] . " <br>
                                 <label><b>Categoria:</b> </label> " . $row["nomeTipo"] . " <br>
-                                <label><b>Categoria:</b> </label> " . $row["nomeServico"] . " <br>
+                                <label><b>Serviço prestado:</b> </label> " . $row["nomeServico"] . " <br>
                             </div>
 
                           </div><br>
